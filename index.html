@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<title>DZD Task — Hero + Scrolling Gallery</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<!-- Navigation Header -->
+		<header class="header" id="header">
+			<nav class="nav-container">
+				<div class="logo">
+					<a href="#" aria-label="Home">
+						<svg width="140" height="40" viewBox="0 0 140 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<rect width="40" height="40" rx="8" fill="#007acc"/>
+							<text x="50" y="28" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#0b1220">DZD</text>
+						</svg>
+					</a>
+				</div>
+				<button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu" aria-expanded="false">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+				<ul class="nav-menu" id="navMenu">
+					<li><a href="#services">Services</a></li>
+					<li><a href="#work">Work</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#contact" class="nav-cta">Contact Us</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main>
+			<!-- SECTION A — Homepage Hero -->
+			<section class="hero" id="hero">
+				<div class="hero-inner container">
+					<h1 class="headline">Your <span id="rotating" class="rotating">email marketing sucks.</span></h1>
+					<!-- Screen-reader live region to announce changes -->
+					<span id="rotatingSr" class="sr-only" aria-live="polite" aria-atomic="true">Your email marketing sucks.</span>
+					<p class="subheadline">We help businesses fix, scale and automate their growth channels.</p>
+					<a class="cta" href="#">Get a free review →</a>
+				</div>
+			</section>
+
+			<!-- SECTION B — Scrolling Gallery Row -->
+			<section class="gallery" aria-label="Client logos">
+				<div class="gallery-header container">
+					<p class="gallery-title">Trusted by leading brands</p>
+				</div>
+				<div class="logo-track-wrap" id="logoTrackWrap">
+					<div class="logo-track" id="logoTrack">
+						<!-- Logos duplicated in HTML for a seamless loop -->
+						<div class="logo-set" id="logos">
+							<!-- We use inline SVG data URIs so this file is standalone -->
+							<img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='80'><rect width='100%' height='100%' fill='%23007acc'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='20' fill='white'>Acme</text></svg>" alt="Acme logo">
+							<img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='80'><rect width='100%' height='100%' fill='%23ff6b6b'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='20' fill='white'>Bright</text></svg>" alt="Bright logo">
+							<img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='80'><rect width='100%' height='100%' fill='%2328c76f'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='20' fill='white'>GreenCo</text></svg>" alt="GreenCo logo">
+							<img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='80'><rect width='100%' height='100%' fill='%23ffb030'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='20' fill='white'>Orbit</text></svg>" alt="Orbit logo">
+							<img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='80'><rect width='100%' height='100%' fill='%234b5563'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='20' fill='white'>Nexa</text></svg>" alt="Nexa logo">
+							<img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='80'><rect width='100%' height='100%' fill='%235d3fd3'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='20' fill='white'>Lumen</text></svg>" alt="Lumen logo">
+						</div>
+						<!-- duplicate -->
+						<div class="logo-set" aria-hidden="true">
+							<img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='80'><rect width='100%' height='100%' fill='%23007acc'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='20' fill='white'>Acme</text></svg>" alt="Acme logo">
+							<img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='80'><rect width='100%' height='100%' fill='%23ff6b6b'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='20' fill='white'>Bright</text></svg>" alt="Bright logo">
+							<img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='80'><rect width='100%' height='100%' fill='%2328c76f'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='20' fill='white'>GreenCo</text></svg>" alt="GreenCo logo">
+							<img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='80'><rect width='100%' height='100%' fill='%23ffb030'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='20' fill='white'>Orbit</text></svg>" alt="Orbit logo">
+							<img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='80'><rect width='100%' height='100%' fill='%234b5563'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='20' fill='white'>Nexa</text></svg>" alt="Nexa logo">
+							<img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='80'><rect width='100%' height='100%' fill='%235d3fd3'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='20' fill='white'>Lumen</text></svg>" alt="Lumen logo">
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<script src="script.js"></script>
+	</body>
+</html>
