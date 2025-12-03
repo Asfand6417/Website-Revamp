@@ -68,10 +68,10 @@ body{background:var(--bg);color:var(--fg);-webkit-font-smoothing:antialiased;lin
 .logo-track-wrap:hover .logo-track,
 .logo-track.pause{animation-play-state:paused}
 
-/* Keyframes */
+/* Keyframes - changed to scroll LEFT to RIGHT */
 @keyframes marquee{
-  from{transform:translateX(0)}
-  to{transform:translateX(-50%)}
+  from{transform:translateX(-50%)}
+  to{transform:translateX(0)}
 }
 
 /* Mobile Responsive */
